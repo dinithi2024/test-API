@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c9d9e9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+
+
+.App {
+  margin: 10px;
+  padding: 25px;
+  justify-content: center;
+  max-width: 900px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 19px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.subApp {
+  margin-top: 50px;
+  padding-top: 50px;
+  justify-content: center;
+  
+}
+
+.App-header {
+  background-color: #007bff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.App-logo {
+  height: 60px;
+  animation: App-logo-spin infinite 10s linear;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button.complete {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.complete:hover {
+  background-color: #218838;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
